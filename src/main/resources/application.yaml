@@ -1,0 +1,8 @@
+quarkus:
+  cxf:
+    codegen:
+      wsdl2java:
+        validate: true
+        enabled: true
+        includes: wsdl_example.wsdl
+        wsdl-location: classpath:wsdl_example.wsdl
