@@ -16,11 +16,12 @@ val quarkusPlatformVersion: String by project
 
 dependencies {
     implementation(enforcedPlatform("${quarkusPlatformGroupId}:${quarkusPlatformArtifactId}:${quarkusPlatformVersion}"))
+    implementation(enforcedPlatform("${quarkusPlatformGroupId}:quarkus-cxf-bom:${quarkusPlatformVersion}"))
     implementation("io.quarkus:quarkus-kotlin")
     implementation("io.quarkus:quarkus-quartz")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
-    implementation("io.quarkiverse.cxf:quarkus-cxf:3.27.0")
-    implementation("io.quarkiverse.cxf:quarkus-cxf-xjc-plugins:3.27.0")
+    implementation("io.quarkiverse.cxf:quarkus-cxf")
+    implementation("io.quarkiverse.cxf:quarkus-cxf-xjc-plugins")
     implementation("io.quarkus:quarkus-arc")
     testImplementation("io.quarkus:quarkus-junit5")
 }
